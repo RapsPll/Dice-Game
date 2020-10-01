@@ -12,8 +12,14 @@
         grid-template-columns: 1fr;
     }
 }
+
 .form__label {
     width: 100%;
+}
+@media (max-width: 372px){
+    .form {
+        text-align: center;
+    }
 }
 
 .form__input {
@@ -25,4 +31,5 @@
     background-color: teal;
     border: 1px solid #ddd;
     color: #fff;
+    margin: 0 10px;
 }
