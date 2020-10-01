@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2016/09/08/18/45/cube-1655118_960_720.jpg);
+    background-position: initial;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-attachment: fixed;
+    color: #fff;
+    padding-bottom: 20px;
+
+}
+
+.gameDescription {
+    text-align: center;
+    max-width: 500px;
+}

@@ -1,0 +1,9 @@
+.cube {
+    /* width: 200px; */
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: teal;
+    border: 1px solid #ddd;
+    color: #fff;
+    /* width: 200px; */
+}

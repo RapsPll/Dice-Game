@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/cube.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/render.css">
+    <script defer src="js/main.js"></script>
+    <title>Gra w kości</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Gra w kości</h1>
+        <p class="gameDescription">Wpisz swoje imię i wciśnij "Zacznij grę" i dowiedz się kto ma większe szczęscie w kościach !</p>
+        <form class="form js-form">
+            <label form__label>
+                Podaj swoje imię: <input class="form__input js-playerName" placeholder=". . ." required minlength="4"
+                    type="text">
+            </label>
+            <button class="form__button">Zacznij grę</button>
+        </form>
+        <div class="js-renderHtml"></div>
+    </main>
+</body>
+
+</html>
