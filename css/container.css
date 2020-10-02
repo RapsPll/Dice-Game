@@ -11,17 +11,11 @@ body {
     margin: 100px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
     background-image: url(https://cdn.pixabay.com/photo/2016/09/08/18/45/cube-1655118_960_720.jpg);
-    background-position: initial;
-    background-size: contain;
-    background-repeat: repeat;
-    background-attachment: local;
     color: #fff;
     padding-bottom: 20px;
-
+    overflow: hidden;
 }
 
 .gameDescription {

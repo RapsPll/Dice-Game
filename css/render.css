@@ -1,19 +1,18 @@
-.js-render {
+.js-renderHtml {
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: 0 10px;
 }
-
-.lastScore {
-    display: none;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 5px
-    /* color: #fff; */
-}
-
-.lastScore--showed {
-    display: block;
+.throwDice {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: teal;
+    border: 1px solid #ddd;
+    color: #fff;
+    align-self: center;
 }
 
 .showLastScore {
@@ -22,9 +21,25 @@
     background-color: teal;
     border: 1px solid #ddd;
     color: #fff;
+    align-self: center;
+
 }
 
-.winner {
+
+.lastScore {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px
+}
+
+.lastScore--showed {
+    display: block;
+}
+
+
+
+.winnerName {
     font-size: 30px;
     font-weight: bold;
     margin: 5px 0 10px 0;
