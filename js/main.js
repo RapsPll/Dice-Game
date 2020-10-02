@@ -15,7 +15,7 @@
     };
 
     const updateText = () => {
-        const resultThrow = document.querySelector(".js-resultThrow")
+        const resultThrow = document.querySelector(".js-lastScore")
         resultThrow.innerText = `Gracz ${playerName.value}:  ${result}
         Komputer:  ${result2}`;
     };
@@ -36,12 +36,10 @@
         let htmlString = "";
         if (playerName.value !== "") {
             htmlString += `
-                <div class="js-render">
-                    <button class="cube">rzuć kośćmi</button>
+                    <button class="throwDice">rzuć kośćmi</button>
                     <button class="showLastScore">Pokaż ostatni rzut</button>
-                    <p class="lastScore js-resultThrow"></p>
-                    <p class="winner js-winnerName"></p>
-                </div>
+                    <p class="lastScore js-lastScore"></p>
+                    <p class="winnerName js-winnerName"></p>
                 `
         } else {
             return;
@@ -60,9 +58,9 @@
     form.addEventListener("submit", onFormSubmit);
 
     const buttonRoll = () => {
-        const buttonCube = document.querySelector(".cube");
-        if (buttonCube) {
-            buttonCube.addEventListener("click", rollADie);
+        const buttonThrowDice = document.querySelector(".throwDice");
+        if (buttonThrowDice) {
+            buttonThrowDice.addEventListener("click", rollADie);
         };
 
         const showLastScore = document.querySelector(".showLastScore");
